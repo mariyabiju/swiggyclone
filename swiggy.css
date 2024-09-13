@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:rgb(252, 251, 251);
+    position: relative;
+}
+
+.headercontent{
+    width:100%;
+    height: 80px;
+    background-color:white;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bottom shadow effect */
+}
+.headercontent img{
+    height: 80px;
+    width:80px;
+    margin-left: 30px;
+
+}
+.other-row{
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: black;
+    font-weight: bold;
+    margin-right: 180px;
+}
+.row-contents {
+    margin-left: auto; /* This pushes row-contents to the right */
+}
+.row-contents a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;  
+}
+a{
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 10px 20px;
+}
+
+.arrow-container {
+    display: flex;
+    margin-left: 500px;
+    flex-direction: row;
+    gap: 15px; /* Space between the two arrows */
+}
+.main-heading,.main-heading2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px; /* Adds some space below the heading */
+    display: flex; /* Ensure the heading and buttons are aligned in a row */
+    align-items: center; /* Vertically align text and buttons */
+    margin-right: auto;
+}
+.arrow-btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+.arrow-btn:hover {
+    background-color: #d0d0d0;
+}
+.left-arrow {
+    transform: rotate(180deg); /* Arrow pointing left */
+}
+.right-arrow {
+    transform: rotate(180deg); /* Arrow pointing left */
+}
+.scrollable-content,.scrollable-content2{
+    display: flex;
+    flex-direction: row; /* Allows vertical alignment */
+    gap: 60px; /* Adds space between the items */
+}
+.item{
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; 
+}
+.item img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+}
+.item p,.item a{
+    text-align: center; /* Centers the image and text */
+    font-size: 22px;
+    color: gray;
+    margin-top: 0; 
+}
+.line-{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+} 
+.line {
+    flex: 1; /*Makes lines expand to fill available space*/
+    height: 1px; /*Thickness of the line*/
+    background-color: rgb(184, 178, 178); /* Color of the line */
+}
+.item2,.item3{
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; 
+}
+.item2 img {
+    width: 260px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.item3 img {
+    width: 220px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.item2:hover ,.item3:hover{
+    transform: scale(0.9); /* Zoom in when hovering on the whole item */
+}
+
+.item2 p,.item2 a,.item3 p,.item3 a{
+    text-align: start; /* Centers the image and text */
+    font-size: 16px;
+    color:gray;
+    font-weight: bold;
+    margin: 0; 
+    padding: 0;
+    
+}
+.itemname {
+    text-align: start; /* Centers the image and text */
+    font-size: 16px;
+    color:black;
+    margin-top: 0; 
+}
+.button-section,.button-section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 10px;
+}
+.button-section a{
+    text-align: center;
+    justify-content: center; /* Horizontally centers the text */
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(66, 66, 66);
+    font: bold;
+    border-radius: 20px;
+    background-color: inherit; /* Matches the background color of the screen */
+    border : 2px solid #ccc;   
+}
+.button-section2 a {
+    display: inline-block; /* Inline block to control size and spacing properly */
+    align-items: center; /* Centers text vertically */
+    width: calc(25% - 10px); /* 4 buttons in one row (25% each), minus the gap */
+    height: 40px; /* Set a fixed height for the button */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    background-color: inherit; /* Match background color */
+    border: 2px solid #ccc; /* Border around the button */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show dots (...) if text exceeds width */
+    padding: 8px 20px; /* Padding left and right to leave space */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+.button-section2 a:hover {
+    background-color: #f0f0f0; /* Background change on hover */
+}
+
+.content-footer1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgray;
+    height: 150px;
+}
+.content-footer1 p{
+    font-size: 28px;
+    margin-left: 250px;
+    color: rgb(77, 75, 75);
+    font-weight: bold;
+    margin-right: 100px;
+} 
+.content-footer1 img{
+    width: 220px;
+    height: 100px;
+    clip-path: inset(16px 15px 18px 15px);/* Adjust these values based on how much you need to crop */
+}
+.content-footer2{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: black;
+    
+}
+.headingfooter2-1{
+    display: flex; /* Aligns the logo and text horizontally */
+    flex-direction: column;
+    gap: 10px; /* Space between the image and text */
+    color: white;
+    margin-left: 250px;
+    margin-top: 20px;
+    font-size: 22px; 
+}
+.headingfooter2-2 {
+    display: flex; /* Aligns the logo and text horizontally */
+    flex-direction: column;
+    color: white;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+.swiggytext{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.swiggytext img{
+    width: 30px; /* Adjust the logo size */
+    height: 45px;       
+}
+.swiggytext span{
+    font-size: 23px; /* Swiggy text size */
+    font-weight: bold;
+    color: white;  
+    font-weight: bold;
+    margin-top: 10px;  
+}  
+.subheadings1{
+    gap:8px ;
+    display: flex;
+    flex-direction: column;
+}  
+.subheadings,.subheadings1 a {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(139, 138, 138);
+}
+.column3{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.row1{
+    font-size: 14px;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    color: black;
+    font-weight: bold;
+    margin-right: 180px;
+}
+.row2{
+    margin-left: auto; /* This pushes row-contents to the right */
+}
+.row2 a{
+    margin-right: 40px;
+    text-decoration: none;
+    color:rgb(68, 67, 67);
+    font-size: 18px;
+}
+.row2 a:hover {
+    color: orangered; /* Background change on hover */
+}
+.cart{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color:rgb(236, 233, 233);
+    position: relative; /*The .icon-box has been positioned using position: absolute
+     with top and left values to ensure the icons overlap the boxes as desired.*/
+}
+.screen-contents{
+    display: flex;
+    align-items: flex-start; /* Align items from the top */
+    gap: 35px; /* Gap between leftsection and rightsection */
+}
+
+.leftsection{
+    display: flex;
+    flex-direction: column;  
+}
+.first{
+    width: 690px;
+    height: 140px;
+    background-color: white;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+}
+.account-heading{
+    font-size: 19px;
+    color: black;
+    font-weight: bold;
+}
+.account-sub{
+    font-size: 17px;
+    color: gray;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 25px;
+}
+.button1 button{
+    background-color: white; /* Inside color of the button */
+    border: 2px solid green; /* Green border */
+    color: green; /* Text color */
+    padding: 7px 30px; /* Padding inside the button */
+    font-size: 12px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.button2 button{
+    background-color: green; /* Inside color of the button */
+    border: none;
+    color: white; /* Text color */
+    padding: 7px 30px; /* Padding inside the button */
+    font-size: 12px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.button1 button:hover,.button2 button:hover{
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2); /* Top and bottom shadow */
+}
+.bold{
+    font-weight: bold;
+}
+.second{
+    width: 690px;
+    height: 40px;
+    background-color: white;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+}
+.account-heading2{
+    font-size: 19px;
+    color:gray;
+    font-weight: bold;
+}
+.icon-box {
+    position: absolute;
+    top: 50px; /* Adjust to overlap vertically */
+    left: -30px; /* Adjust to overlap horizontally[10px distance[total width 40px , in that 10px will be inside the box containing button nd text]*/
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure icon box is above the dotted line */
+}
+.icon-box i {
+    font-size: 15px;
+    color: black; 
+}
+.maincontent{
+    position: relative; /* Ensures the dotted line is positioned inside each .maincontent block */
+    
+    margin-left: 150px;
+    margin-left: 80px; 
+}
+.dotted-line1,.dotted-line2 {
+    position: absolute;
+    left: -15px; /* Adjust left position to center through the icon */
+    top: 70px; /* Align the top position for the line */
+    width: 2px;
+    background: repeating-linear-gradient(
+        180deg,
+        #d3d3d3 0,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 1; /* Lower z-index to ensure it is behind the icon box */
+}
+/* Adding margin to control spacing between sections -this can be used when 
+relative postioning is used and margin bottom simply doesnt works*/
+.maincontent:nth-child(1) {
+    margin-top: 30px; /* Change for a specific section -2nd ,main section clss*/
+}
+.maincontent:nth-child(2) {
+    margin-top: 20px; /* Change for a specific section -2nd ,main section clss*/
+}
+.maincontent:nth-child(3) {
+    margin-top: 20px; /* Change for a specific section */
+}
+.dotted-line1 {
+    height: 250px; /* Adjust height to extend between sections */
+}
+.dotted-line2 {
+    height: 150px; /* Adjusts the height of the dotted line in the second .main-content(second child class) block */
+}
+.rightsection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.upperbox{
+    width: 320px;  /* Set the width of the box */
+    height: 100px; /* Set the height of the box */
+    background-color: white;
+    display: flex;  /* Flexbox layout for the image and text */ 
+}
+.lowerbox{
+    width: 320px;  /* Set the width of the box */
+    height: 50px; /* Set the height of the box */
+    background-color: white;
+}
+.scroll-box {
+    background-color: white;
+    display: flex;
+    width: 300px;  /* Set the width of the box */
+    height: 380px; /* Set the height of the box */
+    overflow-y: scroll; /* Add vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    padding: 10px; /* Optional: Padding inside the box */  
+}
+.upperbox-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 14px;
+    margin-left:8px ;
+}
+.foodpic{
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.hotelname{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.hotelplace{
+    font-size: 12px;
+    color: gray;
+}
+.underline{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    margin-top: 9px;
+}
+.scrolling-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    margin-left:20px ;
+
+}
+.fooditem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.foodname{
+    font-size: 16px;
+    white-space: nowrap; /* text stays on a single line and doesn’t overflow, */
+    overflow: hidden;  /* text stays on a single line and doesn’t overflow, */
+}
+.count-box {
+    margin-left: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 20px;
+    padding: 3px 5px;
+    border: 1px solid #ccc;  /* Border for the entire box */
+}
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.decrement {
+    color: gray;
+}
+.increment {
+    color: green;
+}
+.count {
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+}
+.price-container{
+    display: flex;
+    flex-direction: column;
+}
+.originalprice{
+    font-size: 12px;
+    text-decoration: line-through; /* Strike-through effect */
+    color: black; 
+}
+.discountprice{
+    font-size: 13px;
+    color: black;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiggy.css" />
+    <link rel="icon" href="imagesswiggyclone/swiggylogo.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Swiggy</title>
+</head>
+<body class="cart">
+    <div class="headercontent">
+        <img src="imagesswiggyclone/swiggylogo.png" alt="Profile Pic" class="profile-pic">
+        <a  class="row1"href="#">SECURE CHECKOUT</a>
+        <div class="row2">
+            <a href="#">Help</a><a href="#">Sign in</a>
+        </div>
+    </div>
+    <div class="screen-contents">
+        <div class="leftsection">
+            <div class="maincontent">
+                <div class="icon-box">
+                    <i class="fas fa-user"></i> <!-- Replace with actual icons (SVGs or Font Awesome) -->
+                </div>
+                <div class="dotted-line1"></div>
+                <div class="first">
+                    <span class="account-heading">Account</span><br><span class="account-sub">To place your order now, log in to your existing account or sign up</span><br><br>
+                    <div class="buttons">
+                        <div class="button1"><a href="#"><button type="button">Have an account?<br><div class="bold">LOG IN</div></button></a></div>
+                        <div class="button2"><a href="#"><button type="button">New to swiggy?<br><div class="bold">SIGN UP</div></button></a></div>
+                    </div>
+                </div>   
+            </div>
+            <div class="maincontent">
+                <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="dotted-line2"></div>
+                <div class="second">
+                    <span class="account-heading2">Delivery</span>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="icon-box">
+                    <i class="faas fa-credit-card"></i>
+                </div>
+                <div class="second">
+                    <span class="account-heading2">Payment</span>
+                </div>
+            </div>    
+        </div>
+        <div class="rightsection">
+            <div class="upperbox">
+                <img img src="imagesswiggyclone/dosa.jpg" alt="food Pic" class="foodpic">
+                <div class="upperbox-contents">
+                    <span class="hotelname">Aryas</span><span class="hotelplace">Nettoor</span>
+                    <div class="underline"></div>
+                </div> 
+            </div>
+            <div class="scroll-box">
+                <div class="scrolling-content">
+                    <div class="fooditem">
+                        <span class="foodname">Masala Dosa</span>
+                        <div class="count-box">
+                            <button class="decrement" onclick="decrease()">-</button>
+                            <span class="count" id="count">1</span>
+                            <button class="increment" onclick="increase()">+</button>
+                        </div>
+                        <div class="price-container">
+                            <span class="originalprice">₹140</span>
+                            <span class="discountprice">₹120</span>
+                        </div>
+                    </div>
+                                           
+                </div>
+            </div>
+            <div class="lowerbox">
+                
+            </div>
+    
+        </div>
+    </div>   
+</body>
